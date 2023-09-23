@@ -1,0 +1,124 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  display: flex;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    top: 43%;
+  }
+}
+.content .img {
+  width: 300px;
+}
+.content .img .mobile {
+  display: none;
+}
+.content .img img {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+@media (max-width: 767px) {
+  .content .img {
+    width: 100%;
+  }
+  .content .img .mobile {
+    display: block;
+    border-radius: 15px 15px 0 0;
+  }
+  .content .img img {
+    display: none;
+  }
+}
+
+.content .info {
+  width: 300px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .content .info {
+    padding: 20px 25px;
+  }
+}
+
+.content .info h3.title {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.content .info h3:not(.title) {
+  font-size: 30px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .content .info h3:not(.title) {
+    width: 100%;
+  }
+}
+
+.content .info p {
+  color: hsl(228, 12%, 48%);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 87%;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  .content .info p {
+    width: 100%;
+  }
+}
+
+.content .info .price {
+  display: flex;
+  align-items: center;
+}
+.content .info .price span:first-child {
+  display: inline-block;
+  margin-right: 10px;
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  font-weight: bold;
+}
+.content .info .price span:last-child {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.content .button {
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.content .button img {
+  margin-right: 10px;
+}
+
+.content .button a {
+  text-decoration: none;
+  color: white;
+}
+
+.content .button:hover {
+  background-color: hsl(157.3, 69.8%, 10.4%);
+}
